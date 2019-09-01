@@ -48,7 +48,6 @@ public class EncapsulateTheData {
 	}
 
 	public void setitemsReceived(int itemsReceived) {
-		System.out.println("hi");
 		this.itemsReceived = itemsReceived;
 	}
 

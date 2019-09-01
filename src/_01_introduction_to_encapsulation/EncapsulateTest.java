@@ -10,8 +10,12 @@ class EncapsulateTest {
 	
 	@Test
 	public void itemsReceivedException() {
-		System.out.println("hi");
 		e.setitemsReceived(5);
 		assertEquals(5,e.getitemsReceived());
+	}
+	
+	@Test
+	public void degreesTurnedException() {
+		System.out.println();
 	}
 }
