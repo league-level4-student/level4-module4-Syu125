@@ -3,16 +3,18 @@ package _03_polymorphs;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class BluePolymorph extends Polymorph{
+public class CircleMorph extends Polymorph{
 
-	BluePolymorph(int x, int y, int width, int height) {
+	CircleMorph(int x, int y, int width, int height) {
 		super(x, y, width, height);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void draw(Graphics g) {
-		g.setColor(Color.blue);
+		// TODO Auto-generated method stub
+		g.setColor(Color.cyan);
 		g.fillRect(getx(), gety(), getwidth(), getheight());
 	}
-	
+
 }
