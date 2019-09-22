@@ -37,10 +37,12 @@ public class HospitalTest extends TestCase {
 	public void testDoctorsHaveSpecialties() throws Exception {
 		Doctor testDoctor = new Doctor();
 		assertEquals(false, testDoctor.performsSurgery());
-
+		System.out.println(testDoctor.performsSurgery());
+		
 		Doctor testSurgeon = new Surgeon();
 		assertEquals(true, testSurgeon.performsSurgery());
-
+		System.out.println(testSurgeon.performsSurgery());
+		
 		GeneralPractitioner testGP = new GeneralPractitioner();
 		assertEquals(true, testGP.makesHouseCalls());
 		assertEquals(false, testSurgeon.makesHouseCalls());
@@ -52,10 +54,12 @@ public class HospitalTest extends TestCase {
 		Doctor testDoctor = new GeneralPractitioner();
 		testDoctor.assignPatient(new Patient());
 		assertEquals(1, testDoctor.getPatients().size());
+		System.out.println(testDoctor.getPatients().size());
 		testDoctor.assignPatient(new Patient());
 		assertEquals(2, testDoctor.getPatients().size());
 		testDoctor.assignPatient(new Patient());
 		assertEquals(3, testDoctor.getPatients().size());
+		
 	}
 
 	/* When you check a patient's pulse, they feel cared for */
