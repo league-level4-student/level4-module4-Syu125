@@ -54,7 +54,6 @@ public class HospitalTest extends TestCase {
 		Doctor testDoctor = new GeneralPractitioner();
 		testDoctor.assignPatient(new Patient());
 		assertEquals(1, testDoctor.getPatients().size());
-		System.out.println(testDoctor.getPatients().size());
 		testDoctor.assignPatient(new Patient());
 		assertEquals(2, testDoctor.getPatients().size());
 		testDoctor.assignPatient(new Patient());
