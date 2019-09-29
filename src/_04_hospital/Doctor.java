@@ -26,6 +26,13 @@ public class Doctor extends Hospital{
 		return makesHouseCalls;
 
 	}
+
+	void doMedicine() {
+		for(Patient p: patients) {
+			p.feelsCaredFor = true;
+		}
+		
+	}
 	
 	
 }

@@ -9,4 +9,8 @@ public class Patient extends Hospital{
 	void checkPulse() {
 		feelsCaredFor = true;
 	}
+	boolean feelsCaredFor() {
+		return feelsCaredFor;
+		
+	}
 }
